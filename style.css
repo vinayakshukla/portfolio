@@ -224,6 +224,12 @@ intro-container {
     min-height: 40rem;
 
 }
+.projects-container {
+    position: relative;
+    margin: 3rem 6vw 1rem 6vw;
+    min-height: 40rem;
+
+}
 
 .tagcloud {
 

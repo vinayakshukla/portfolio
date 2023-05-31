@@ -1,7 +1,11 @@
 
  let width= document.getElementsByClassName("protfolio-website")[0].offsetWidth;
- let circleRadius=width>500?250: (width-100)/2;
+ let circleRadius=width>600?250: (width-100)/2;
+ 
+//  let circleRadius=100;
+
 const Texts = [
+
 
     'HTML', 'CSS', 'ANGULAR',
 

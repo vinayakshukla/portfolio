@@ -372,6 +372,22 @@ I .tagcloud {
     height: 100px;
 
 }
+.tagcloud--item{
+    font-size:1rem;
+}
+.circle {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to top left, #0062bE, #00A2FE);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -20px;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    z-index: 10;
+  }
 
 @media screen and (max-width: 1100px) {
 
@@ -396,5 +412,8 @@ I .tagcloud {
    .first-name, .second-name{
     display: block;
    }
+   .tagcloud--item{
+    font-size:11px
+}
 
 }

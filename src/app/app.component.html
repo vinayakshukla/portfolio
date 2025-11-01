@@ -1,0 +1,203 @@
+<div class="protfolio-website " #portfolioWebsite>
+  <!-- Intro Section -->
+  <section class="intro">
+    <div class="middle-container">
+      <div class="cool-animation">
+        <img class="plane-gif" src="../../assets/images/plane.gif" alt="">
+      </div>
+
+      <span class="title">
+        <span class="first-name">
+          <span class="rubberBand">V</span><span class="rubberBand">i</span><span
+            class="rubberBand">n</span><span class="rubberBand">a</span><span class="rubberBand">y</span><span class="rubberBand">a</span><span class="rubberBand">k </span>
+        </span> 
+        <span class="second-name">
+          <span class="rubberBand"> S</span><span class="rubberBand">h</span><span class="rubberBand">u</span><span class="rubberBand">k</span><span class="rubberBand">l</span><span
+            class="rubberBand">a</span>
+        </span>
+      </span>
+
+      <div class="discription-text">
+        <span class="title-description">I am a web developer</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about ">
+    <div class="about-container">
+      <div class="social-profiles">
+        <div class="social-profile-image-section">
+          <img class="profile-pic" src="../../assets/images/profile-image.jpg" alt="Bhai ka photo imagine kr lo">
+        </div>
+
+        <div class="social-profile-icons-container">
+          <div>
+            <a href="https://www.linkedin.com/in/vinayak-shukla-b7319b162/">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+          </div>
+
+          <div>
+            <a href="https://github.com/vinayakshukla">
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+
+          <div>
+            <a href="mailto:vinayakshukla2000@gmail.com">
+              <i class="fa fa-envelope-o"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-me-container">
+        <div class="about-me-title-container">
+          <h1 class="about-me-title">About me.</h1>
+        </div>
+
+        <div class="about-me-discription-container">
+          <p class="about-me-discription">
+            Hi, I am Vinayak Shukla, a 24 years old web developer living in pune, India. I am a Computer
+            Science Engineer, currently working with awesome folks at Digitate.
+          </p>
+
+          <p class="about-me-discription">
+            Well-organised person, problem solver with high attention to detail. Fan of outdoor
+            activities, TV series and English literature.
+          </p>
+
+          <p class="about-me-discription">
+            Just connect with me on LinkedIn. I am always excited to do business with like minded
+            people, lets discuss over coffee.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <div class="skills-container">
+      <div class="skills-title-section">
+        <h1 class="skills-title">Skills.</h1>
+      </div>
+
+      <div class="inside-container">
+        <div class="resume-container">
+          <p>Download my Resume</p>
+          <a href="../../assets/images/Resume.pdf" download="resume">
+            <img src="../../assets/images/dwnld.png" alt="">
+          </a>
+        </div>
+
+        <div class="skill-chart-container">
+          <span class="Sphere" #sphere></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <div class="projects-container">
+      <h1 class="skills-title">Projects</h1>
+      
+      <div id="carouselExampleIndicators" style="height:30rem" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li *ngFor="let project of projects; let i = index" 
+              [attr.data-target]="'#carouselExampleIndicators'" 
+              [attr.data-slide-to]="i" 
+              [class.active]="i === 0"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div *ngFor="let project of projects; let i = index" 
+               [class]="getProjectClass(i)"
+               [class.active]="i === 0">
+            <div style="background:#42574c; display: flex; justify-content: center;" class="h-100 w-100">
+              <div style="color:white; margin: auto; width: 60vw;" class="project-block">
+                <h2>{{ project.title }}</h2>
+                <div class="project-descpription">
+                  <p>{{ project.description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Footer Section -->
+  <section class="footer">
+    <div class="greetings-container">
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <div class="name">
+          <p class="footTitle aligncenter">Vinayak Shukla</p>
+        </div>
+        <div class="social-profile-icons-container-enhanced">
+          <div>
+            <a href="https://www.linkedin.com/in/vinayak-shukla-b7319b162/">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+          </div>
+
+          <div>
+            <a href="https://github.com/vinayakshukla">
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+
+          <div>
+            <a href="mailto:vinayakshukla2000@gmail.com">
+              <i class="fa fa-envelope-o"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://twitter.com/vinayak_shukla_?t=LqyZUcDqJbXVZbgr9wmZ0A&s=09">
+              <i class="fa fa-twitter-square" style="color:skyblue"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="made-in-india">
+          <p class="madewithlove">
+            Made with <i class="fa fa-heart"></i> in India
+          </p>
+        </div>
+
+        <div class="footer-image-block">
+          <img class="footer-image" src="../../assets/images/foot.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

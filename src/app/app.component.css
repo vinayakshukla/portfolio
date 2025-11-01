@@ -1,56 +1,35 @@
-intro-container {
-
+.intro-container {
     background: skyblue;
-
 }
 
 .dev-name {
-
     margin: auto;
-
 }
 
 .intro {
-
-    background: url("images/clouds.png") repeat-x top center;
+    background: url("../../assets/images/clouds.png") repeat-x top center;
     background-size: contain;
     background-repeat: repeat;
     min-height: 40rem;
     display: flex;
 }
 
-
-
 .middle-container {
-
     margin: auto;
     height: 30rem;
-
     text-align: center;
-
-    
 }
 
+.plane-gif {
+    width:200px;
+    height:250px;
+}
 .title {
-
     font-family: 'Sacramento', cursive !important;
     text-transform: none;
     font-weight: 400;
-
-    color: #fff;
-
-    font-size: 4.4rem;
-}
-
-.title-description {
-
-    font-family: 'Sacramento';
-
-    text-transform: none;
-    font-weight: 300;
     color: #fff;
     font-size: 4.4rem;
-
 }
 
 .title-description {
@@ -58,63 +37,47 @@ intro-container {
     text-transform: none;
     font-weight: 300;
     color: #fff;
-
     font-size: 2.4em;
-
 }
 
 .discription-text {
-
     margin: 1em;
-
 }
 
 @keyframes rubberBand {
-
     0% {
         -webkit-transform: scale3d(1, 1, 1);
         -ms-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1)
     }
-
     30% {
-
         -webkit-transform: scale3d(1.25, 0.75, 1);
         -ms-transform: scale3d(1.25, 0.75, 1);
         transform: scale3d (1.25, 0.75, 1)
     }
-
     40% {
-
         -webkit-transform: scale3d (0.75, 1.25, 1);
         -ms-transform: scale3d (0.75, 1.25, 1);
         transform: scale3d (0.75, 1.25, 1)
     }
-
     50% {
         -webkit-transform: scale3d(1.15, 0.85, 1);
         -ms-transform: scale3d(1.15, 0.85, 1);
         transform: scale3d(1.15, 0.85, 1)
     }
-
     75% {
-
         -webkit-transform: scale3d (1.05, 0.95, 1);
         -ms-transform: scale3d(1.05, 0.95, 1);
         transform: scale3d (1.05, 0.95, 1)
     }
-
     100% {
-
         -webkit-transform: scale3d(1, 1, 1);
         -ms-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1)
     }
-
 }
 
 .rubberBand {
-
     transition: all 0.3s ease-out;
     display: inline-block;
     animation-fill-mode: both;
@@ -122,21 +85,17 @@ intro-container {
 }
 
 .rubberBand:hover {
-
     -webkit-animation-name: slidein;
     animation-name: rubberBand;
     color: #6c6a67ed;
 }
 
 .about-container {
-
     position: relative;
-
     margin: 3rem 6vw 1rem 6vw;
     min-height: 20rem;
     display: flex;
     justify-content: center;
-
 }
 
 .social-profiles {
@@ -145,14 +104,11 @@ intro-container {
 }
 
 .about-me-container {
-
     margin: 1ren;
-
 }
 
 .about-description-container {
     width: 60%;
-
 }
 
 .social-profile-image-section img {
@@ -160,25 +116,20 @@ intro-container {
     border-radius: 16px;
     box-shadow: 3px 3px 4px rgb(27 40 49 / 25%);
     border: 2px solid #5dbde4;
-
 }
 
 .social-profile-icons-container {
     margin: 1rem;
-
     display: flex;
-
     justify-content: center;
-    
 }
+
 .social-profile-icons-container-enhanced {
     margin: 1rem;
-
     display: flex;
-
     justify-content: center;
-    
 }
+
 .social-profile-icons-container-enhanced .fa {
     font-size: 2.5rem;
     margin: 0 1rem;
@@ -191,76 +142,60 @@ intro-container {
 
 .fa-linkedin-square {
     color: #287bbc;
-
 }
 
 .fa-envelope-o {
     color: #d14836;
-
 }
 
 .fa-github {
-
     color: black;
-
 }
 
 .about-me-title {
-
     color: #3a3a3a;
     font-family: 'ProximaNovaT';
     font-size: 3rem;
     font-weight: normal;
-
     margin: 0px;
-
 }
 
 .about-me-discription {
     color: #838383;
     margin-bottom: 15;
     font-size: 21px;
-
     margin: 0 auto;
     margin-bottom: 15;
     font-size: 21px;
-
 }
 
 .skills-container {
     position: relative;
     margin: 3rem 6vw 1rem 6vw;
     min-height: 40rem;
-
 }
+
 .projects-container {
     position: relative;
     margin: 3rem 6vw 1rem 6vw;
     min-height: 40rem;
-
 }
 
 .tagcloud {
-
     display: inline-block;
     font-weight: bold;
     letter-spacing: 1px;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
-
 }
-
-/* Change color of each text in sphere on hover */
 
 .tagcloud--item:hover {
     color: #FFC300;
-
 }
 
 .skill-chart-container {
     text-align: center;
     width: 50% ;
-
 }
 
 .greetings-container {
@@ -268,15 +203,14 @@ intro-container {
     margin: 3rem 6vw 1rem 6vw;
     min-height: 18rem;
     z-index: 10;
-
 }
+
 .footer-content{
     position: relative;
     z-index: 10;
 }
 
 .footTitle {
-
     font-family: 'Sacramento', cursive;
     text-transform: none;
     font-weight: 400;
@@ -287,25 +221,19 @@ intro-container {
 
 .madewithlove {
     text-align: center;
-
 }
 
 .fa-heart {
-
     color: red;
-
 }
 
 .footer-image-block {
     text-align: center;
-
 }
 
 .inside-container {
     display: flex;
-
     justify-content: center;
-
 }
 
 .resume-container {
@@ -313,83 +241,62 @@ intro-container {
     margin: auto;
     text-align: center;
     padding-bottom: 2em;
-   
 }
+
 .resume-container img{
     width: 20rem;
 }
 
 .resume-container p {
-
     text-align: center;
     color: #838383;
     font-size: 25px;
     position: absolute;
-
     z-index: 1000;
-
     width: 100%;
-
     left: 0;
-
 }
 
 .message-container {
-
     position: relative;
     text-align: center;
-
     margin: 3rem 6vw 1rem 6vw;
     min-height: 15rem;
     text-align: center;
-
 }
 
 .message-container h1 {
-
     color: #838383;
-
     font-size: 2rem;
-
     font-style: normal;
-
     font-weight: normal;
 }
 
 .message-input {
-
     background: #e5e5e5;
-
     border: none;
-
     border-radius: 1rem;
-
     display: block;
     padding: 0.5em 1em 0.5em 0.7em;
     width: 70%;
     color: rgba(0, 0, 0, 0.8);
-
     font-size: 2rem;
-
     line-height: 1;
-
     opacity: 1;
-
     margin: auto;
 }
 
 hr {
-     margin:auto;
+    margin:auto;
     width: 75%;
-
     box-shadow: 2px 0px 7px skyblue;
 }
 
 I .tagcloud {
     width: 100px;
     height: 100px;
-
 }
+
 .tagcloud--item{
     font-size:1rem;
 }
@@ -399,13 +306,10 @@ I .tagcloud {
     padding: 0px;
 }
 
-
-
 .context {
     width: 100%;
     position: absolute;
     top:50vh;
-    
 }
 
 .context h1{
@@ -414,14 +318,11 @@ I .tagcloud {
     font-size: 50px;
 }
 
-
 .area{
     background: #ffffff;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
     height:30vh;
-    
-   
 }
 
 .circles{
@@ -442,7 +343,6 @@ I .tagcloud {
     background: skyblue;
     animation: animate 25s linear infinite;
     bottom: -150px;
-    
 }
 
 .circles li:nth-child(1){
@@ -451,7 +351,6 @@ I .tagcloud {
     height: 1vw;
     animation-delay: 0s;
 }
-
 
 .circles li:nth-child(2){
     left: 10%;
@@ -521,49 +420,39 @@ I .tagcloud {
     animation-duration: 11s;
 }
 
-
-
 @keyframes animate {
-
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
         border-radius: 0;
     }
-
     100%{
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
     }
-
 }
 
 @media screen and (max-width: 1100px) {
-
     .about-container {
         display: block;
-
     }
 
     .inside-container {
         display: block;
-
     }
 
     .footer-image-block {
         display: none;
-
     }
-
 }
-@media screen and (max-width: 600px) {
 
+@media screen and (max-width: 600px) {
    .first-name, .second-name{
     display: block;
    }
    .tagcloud--item{
     font-size:11px
 }
-
 }
+
